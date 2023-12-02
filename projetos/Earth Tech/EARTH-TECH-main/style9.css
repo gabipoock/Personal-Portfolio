@@ -1,0 +1,98 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+/* Estilos do cabeçalho */
+
+header {
+
+    background-color: #333;
+
+    color: white;
+
+    padding: 10px;
+
+}
+
+
+nav ul {
+
+    list-style-type: none;
+
+    padding: 0;
+
+    margin: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+nav li {
+
+    margin: 0 15px;
+
+}
+
+
+nav a {
+
+    text-decoration: none;
+
+    color: white;
+
+}
+
+#container {
+    margin: 0px;
+    position: relative;
+}
+
+.conteudo-principal h1,
+p {
+    margin:0;
+    text-align: justify;
+    font-family: "droid-serif", serif;
+    font-style: normal;
+    padding: 80px;
+}
+
+.conteudo-principal p {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    color: black;
+    font-size: 3.75rem;
+    text-indent: -10px;
+}
+.conteudo-principal a{
+    text-decoration: none;
+}
+p {
+    font-size: 1.25rem;
+    font-weight: normal;
+    position: relative;
+    line-height: 30px;
+}
+
+.box-degrade{
+    background-image: linear-gradient(to left, #14ff57, green);
+    animation: degrade-animado 5s infinite alternate;
+}
+
+@keyframes degrade-animado {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+    background-position-x: 100%;
+    }
+}

@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    }
+    
+    nav li {
+    margin: 0 15px;
+    }
+    
+    nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    }
+
+
+section{
+    margin-left: 450px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: rgb(81, 189, 14);
+    width: 300px;
+    height: 560px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+section h2{
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    margin: 2rem;
+    margin-left: 80px;
+}
+
+section form{
+    display: block;
+    width: 100%;
+}
+
+form label{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+form input:focus{
+    border-radius: 16px;
+}
+
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    width: 90%;
+}
+form button:hover{
+    background: #f5f5f5;
+    color: #101026  ;
+    border-radius: 16px;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.box-degrade{
+
+    background-image: linear-gradient(to left, #81c149, rgb(81, 189, 14));
+
+    animation: degrade-animado 5s infinite alternate;
+
+}
+
+ 
+
+@keyframes degrade-animado {
+
+    0%{
+
+        background-position-x: 0%;
+
+    }
+
+    100%{
+
+    background-position-x: 100%;
+
+    }
+
+}

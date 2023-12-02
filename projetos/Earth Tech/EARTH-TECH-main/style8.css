@@ -1,0 +1,138 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+
+/* Estilos do cabeçalho */
+
+header {
+
+    background-color: #333;
+
+    color: white;
+
+    padding: 10px;
+
+}
+
+
+nav ul {
+
+    list-style-type: none;
+
+    padding: 0;
+
+    margin: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+nav li {
+
+    margin: 0 15px;
+
+}
+
+
+nav a {
+
+    text-decoration: none;
+
+    color: white;
+
+}
+
+
+/* Estilos das seções */
+
+section {
+
+    padding: 50px;
+
+}
+
+#container {
+    margin: 0px;
+    position: relative;
+}
+
+.conteudo-principal h1,
+p {
+    margin:0;
+    text-align: justify;
+    font-family: "droid-serif", serif;
+    font-style: normal;
+    padding: 20px;
+}
+
+.conteudo-principal p {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    color: black;
+    font-size: 3.75rem;
+    text-indent: -10px;
+}
+.conteudo-principal a{
+    text-decoration: none;
+}
+p {
+    font-size: 1.25rem;
+    font-weight: normal;
+    position: relative;
+    line-height: 30px;
+}
+
+.img-circle img {
+    width: 30%;
+    position: right;
+    float: right;
+    transition: transform .5s ease;
+}
+
+
+.img-circle:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+h1:hover{
+    color: black;
+    transition: transform .1s ease;
+}
+
+.box-degrade{
+    background-image: linear-gradient(to left, #14ff57, green);
+    animation: degrade-animado 5s infinite alternate;
+}
+
+@keyframes degrade-animado {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+    background-position-x: 100%;
+    }
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 270px;
+    background-color: white;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    padding: 30px;
+}
+

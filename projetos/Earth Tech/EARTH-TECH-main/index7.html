@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+	<title>Notícias sobre a Earth Tech</title>
+	<link rel="stylesheet" type="text/css" href="style7.css">
+
+<html>
+<head>
+	<body>
+		<header>
+		<nav>
+		<ul>
+		<li><a href="#quem-somos">Quem Somos</a></li>
+		<li><a href="#projeto-sustentabilidade">Projeto Sustentabilidade</a></li>
+		<li><a href="#solucoes">Soluções que Apoiamos</a></li>
+		<li><a href="#novidades">Novidades</a></li>
+		<li><a href="#galeria">Galeria de Fotos</a></li>
+		<li><a href="#contato">Contato</a></li>
+		</ul>
+		</nav>
+		</header>
+		
+		<section id="quem-somos">
+		<!-- Conteúdo da seção "Quem Somos" -->
+		</section>
+		
+		<section id="projeto-sustentabilidade">
+		<!-- Conteúdo da seção "Projeto Sustentabilidade" -->
+		</section>
+		
+		<section id="solucoes">
+		<!-- Conteúdo da seção "Soluções que Apoiamos" -->
+		</section>
+		
+		<section id="novidades">
+		<!-- Conteúdo da seção "Novidades" -->
+		</section>
+		
+		<section id="galeria">
+		<!-- Conteúdo da seção "Galeria de Fotos" -->
+		</section>
+		
+		<section id="contato">
+		<!-- Conteúdo da seção "Contato" -->
+		</section>
+
+		<main>
+			<div class="navigation">
+				<h1>NOTÍCIAS DA EARTH TECH</h1>
+		
+			</div>
+		
+			<div class="titulo">
+				<h1 title="Título do Artigo">Empresa de tecnologia que se importa com o planeta</h1>
+		
+				<h2> Notícias atualizadas sobre nossa empresa:<br>
+					-Inovações Tecnológicas Revolucionam a Sustentabilidade Ambiental;<br>
+					-Energia Limpa e Tecnologia: Parceria Rumo a um Futuro Sustentável;<br>
+					-Tecnologia de Ponta Impulsiona Práticas Sustentáveis em Empresas;<br>
+					-Sustentabilidade 4.0: Como a Tecnologia Está Moldando um Mundo Melhor;<br>
+					-Smart Cities Sustentáveis: O Casamento Perfeito entre Tecnologia e Meio Ambiente;<br>
+					-Avanços Tecnológicos que Estão Transformando a Agricultura Sustentável;<br>
+					-Internet das Coisas a Serviço da Sustentabilidade: Conectando e Conservando;<br>
+					-Tecnologia Limpando os Oceanos: Inovações Promissoras para Combater a Poluição Marinha;<br>
+					-Mobilidade Sustentável: A Revolução dos Veículos Elétricos e Autônomos;</h2>
+		
+			</div>
+		
+			<div class="assista">
+				<h5 id="links">Conheça mais sobre a nossa função</h5>
+					<iframe width="560" height="315" src="onu.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+			</div>
+		
+		</body>
+		
+			<script>
+				function atualizaData(){ 
+					var dataAtual = new Date();
+					
+					var vdia = dataAtual.getDate();
+					var vmes = dataAtual.getMonth() + 1;
+					var vano = dataAtual.getFullYear();
+					
+					if (vdia < 10){ vdia = "0" + vdia;}
+					if (vmes < 10){ vmes = "0" + vmes;}
+			
+					dataFormat = vdia + " / " + vmes + " / " + vano;
+				
+					document.getElementById("data").innerHTML = dataFormat;
+					
+					setTimeout("atualizaData()",1000);
+				}
+			</script>
+			
+
+		</main>
+		<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+		<script type="text/javascript">
+			jQuery(window).load(function($){
+				atualizaData();
+			});
+		</script>
+		
+		</body>
+		</html>	
+

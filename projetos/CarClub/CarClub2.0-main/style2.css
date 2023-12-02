@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: rgb(30, 190, 182);
+}
+
+body {
+    background: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Header */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 1000;
+}
+
+header::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px;
+    height: 5px;
+    width: 40%;
+    background: linear-gradient(90deg, var(--primary), transparent);
+
+}
+
+.logo {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+header .year {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 800;
+    margin-top: 40px;
+}
+
+header .menu {
+    position: relative;
+    height: 30px;
+    width: 35px;
+    background: url(menu.png) no-repeat;
+    background-size: 35px;
+    background-position: center;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+header .menu.active {
+    position: relative;
+    height: 30px;
+    width: 35px;
+    background: url(xroxo.png) no-repeat;
+    background-size: 35px;
+    background-position: center;
+    cursor: pointer;
+}
